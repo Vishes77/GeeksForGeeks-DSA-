@@ -4,7 +4,7 @@
 def reverseInGroups(A, N, K):
     i=0
     while(i<N):
-        if(i+K<N):
+        if(i+K<N):   # it is possible to reverse in between of an array.
             A[i:i+K] =  reversed(A[i:i+K])
             i += K
         else:
