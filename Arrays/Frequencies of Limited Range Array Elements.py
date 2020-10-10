@@ -5,8 +5,8 @@ def frequencycount(A,N):
     for i in range(N):
         temp[A[i]] += 1
     for i in range(N):
-        A[i] = temp[i+1]
-
+        A[i] = temp[i+1]  # method one coplexity is 3.7s
+                          # method 2 4.04 complexity.
         #Alternative Method.
         # for i in range(0, N):
         #     A[i] = A[i] - 1
