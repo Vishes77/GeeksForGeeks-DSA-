@@ -9,7 +9,7 @@ def leaders(A, N):
         if(A[i]>=leader):
             li.append(A[i])
             leader = A[i]
-    return reversed(li)
+    return reversed(li)  # Time 2.94
 
 
 
