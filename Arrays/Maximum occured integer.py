@@ -1,18 +1,19 @@
 import math
 
+
 def maxOccured(L, R, N, maxx):
     i = 0
-    while(i<N):
+    while (i < N):
         A[L[i]] += 1
-        A[R[i]+1] -= 1
+        A[R[i] + 1] -= 1
         i += 1
     msum = A[0]
     ind = -1
 
-    i=1
+    i = 1
 
-    while(i<=maxx):
-        A[i]+=A[i-1]
+    while (i <= maxx):
+        A[i] += A[i - 1]
         if msum < A[i]:
             msum = A[i]
             ind = i
