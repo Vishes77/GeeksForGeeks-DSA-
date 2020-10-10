@@ -3,7 +3,13 @@ import math
 # Complete this function
 def leaders(A, N):
     # Your code here
-    for i in range(N-1,-1,-1):
+    leader = A[N-1]
+    li = [leader]
+    for i in range(N-2,-1,-1):
+        if(A[i]>=leader):
+            li.append(A[i])
+            leader = A[i]
+    return reversed(li)
 
 
 
