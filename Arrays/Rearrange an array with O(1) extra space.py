@@ -10,6 +10,13 @@ def arrange(arr, n):
     return arr        #complexity os o(N) time = 0.03
                       #but space complexity is o(N).
 
+#Alternavtive method with O(1) space and O(N) time complexity.
+#complexity os o(N) time = 0.03
+    # for i in range(0,n):
+    #     arr[i] += (arr[arr[i]]%n)*n
+    # for i in range(0,n):
+    #     arr[i] = arr[i]//n
+
 import math
 
 
