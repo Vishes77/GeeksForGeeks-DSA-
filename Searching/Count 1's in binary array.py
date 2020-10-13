@@ -6,7 +6,7 @@ def countOnes(arr, N):
     high = N-1
     while(low <= high):
         # we need to calc the first occurance of 1.
-        #then we subtract that index form the array.
+        # then we subtract that index form the array.
         mid = (low+high)//2
         if(arr[mid] == 0):
             high = mid - 1
