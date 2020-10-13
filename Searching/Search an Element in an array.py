@@ -2,11 +2,18 @@
 import math
 # Complete the below function
 def search(arr, N, X):
-    #Since it is a unsorted array so we will go for linear Serach.
-    for i in range(N):
-        if (arr[i] == X):
-            return i
+    low = 0
+    high = N-1
+    while(low <= high):
+        mid = (low + high)//2 # // to get the round of value.
+        if arr[mid] == X:
+            return mid
+        elif arr[mid] < X:
+            low = mid + 1
+        else:
+            high = mid - 1
     return -1
+    # return arr.insert
 
 def main():
     T = int(input())
