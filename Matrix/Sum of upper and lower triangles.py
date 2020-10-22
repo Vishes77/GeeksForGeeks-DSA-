@@ -13,6 +13,7 @@ def sumTriangles(matrix, n):
             elif(j<i):
                 lower += matrix[i][j]
     return [upper,lower]
+
 if __name__ == '__main__':
     t = int(input())
     for _ in range(t):
